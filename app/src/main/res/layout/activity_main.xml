@@ -6,13 +6,91 @@
     android:layout_height="match_parent"
     tools:context="com.fju.mid2.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="func"
+        android:text="功能一"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/button４"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="12dp"
+        android:onClick="func4"
+        android:text="功能四"
+        app:layout_constraintLeft_toLeftOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+    <Button
+        android:id="@+id/button６"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="12dp"
+        android:onClick="func6"
+        android:text="功能六"
+        app:layout_constraintLeft_toRightOf="@+id/button５"
+        app:layout_constraintTop_toBottomOf="@+id/button３" />
+
+    <Button
+        android:id="@+id/button３"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="8dp"
+        android:onClick="func3"
+        android:text="功能三"
+        app:layout_constraintLeft_toRightOf="@+id/button２"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button８"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:onClick="func8"
+        android:text="功能八"
+        app:layout_constraintLeft_toRightOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/button５" />
+
+    <Button
+        android:id="@+id/button５"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:onClick="func5"
+        android:text="功能五"
+        app:layout_constraintLeft_toRightOf="@+id/button４"
+        app:layout_constraintTop_toBottomOf="@+id/button２" />
+
+    <Button
+        android:id="@+id/button２"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:onClick="func2"
+        android:text="功能二"
+        app:layout_constraintLeft_toRightOf="@+id/button1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="12dp"
+        android:onClick="func7"
+        android:text="功能七"
+        app:layout_constraintLeft_toLeftOf="@+id/button４"
+        app:layout_constraintTop_toBottomOf="@+id/button４" />
 </android.support.constraint.ConstraintLayout>
